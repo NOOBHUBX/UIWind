@@ -1,7 +1,7 @@
 Library = {}
 SaveTheme = {}
 local a = {
-    index = {"Dark","Ocean"},
+    index = {"Dark", "Ocean"},
     Ocean = {
         ["Shadow"] = Color3.fromRGB(24, 24, 31),
         ["Background"] = Color3.fromRGB(29, 28, 38),
@@ -76,9 +76,12 @@ local a = {
             }
         }
     },
+
+    
+
+
     Dark = {
         ["Shadow"] = Color3.fromRGB(15, 15, 15),
-        ["BackgroundTransparency"] = 0.8,
         ["Background"] = Color3.fromRGB(20, 20, 20),
         ["Page"] = Color3.fromRGB(18, 18, 18),
         ["Main"] = Color3.fromRGB(50, 50, 50),
@@ -266,7 +269,7 @@ do
         G.CornerRadius = UDim.new(1, 0)
         G.Parent = F
         local H = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-        local I = {Size = UDim2.new(0, A.AbsoluteSize.X * 1.5, 0, A.AbsoluteSize.X * 1.5), BackgroundTransparency = 0.7}
+        local I = {Size = UDim2.new(0, A.AbsoluteSize.X * 1.5, 0, A.AbsoluteSize.X * 1.5), BackgroundTransparency = 1}
         local J = game:GetService("TweenService"):Create(F, H, I)
         J.Completed:Connect(
             function()
@@ -295,7 +298,7 @@ do
         G.CornerRadius = UDim.new(1, 0)
         G.Parent = F
         local H = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-        local I = {Size = UDim2.new(0, K.AbsoluteSize.X * 5, 0, K.AbsoluteSize.X * 5), BackgroundTransparency = 0.7}
+        local I = {Size = UDim2.new(0, K.AbsoluteSize.X * 5, 0, K.AbsoluteSize.X * 5), BackgroundTransparency = 1}
         local J = game:GetService("TweenService"):Create(F, H, I)
         J.Completed:Connect(
             function()
@@ -354,7 +357,7 @@ do
         S.Name = "Click"
         S.Parent = B
         S.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        S.BackgroundTransparency = 0.7.000
+        S.BackgroundTransparency = 1.000
         S.BorderColor3 = Color3.fromRGB(0, 0, 0)
         S.BorderSizePixel = 0
         S.Size = UDim2.new(1, 0, 1, 0)
@@ -375,7 +378,7 @@ do
         local a0 = Instance.new("TextLabel")
         U.Name = "Real Background"
         U.Parent = x
-        U.BackgroundTransparency = 0.7
+        U.BackgroundTransparency = 1
         U.BorderColor3 = Color3.fromRGB(0, 0, 0)
         U.BorderSizePixel = 0
         U.Size = UDim2.new(1, 0, 0, 35)
@@ -393,7 +396,7 @@ do
         X.Parent = V
         X.AnchorPoint = Vector2.new(0, 0.5)
         X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        X.BackgroundTransparency = 0.7
+        X.BackgroundTransparency = 1
         X.BorderColor3 = Color3.fromRGB(0, 0, 0)
         X.BorderSizePixel = 0
         X.Position = UDim2.new(0, 0, 0.5, 0)
@@ -406,7 +409,7 @@ do
         Z.PaddingRight = UDim.new(0, 70)
         _.Parent = X
         _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        _.BackgroundTransparency = 0.7
+        _.BackgroundTransparency = 1
         _.BorderColor3 = Color3.fromRGB(0, 0, 0)
         _.BorderSizePixel = 0
         _.LayoutOrder = 1
@@ -425,7 +428,7 @@ do
         addToTheme("Text & Icon", _)
         a0.Parent = X
         a0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        a0.BackgroundTransparency = 0.7
+        a0.BackgroundTransparency = 1
         a0.BorderColor3 = Color3.fromRGB(0, 0, 0)
         a0.BorderSizePixel = 0
         a0.Size = UDim2.new(1, 0, 0, 14)
@@ -450,7 +453,7 @@ do
             a1.Name = "Image"
             a1.Parent = V
             a1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            a1.BackgroundTransparency = 0.7
+            a1.BackgroundTransparency = 1
             a1.BorderColor3 = Color3.fromRGB(0, 0, 0)
             a1.BorderSizePixel = 0
             a1.Size = UDim2.new(0, 40, 1, 0)
@@ -458,7 +461,7 @@ do
             a2.Parent = a1
             a2.AnchorPoint = Vector2.new(0.5, 0.5)
             a2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            a2.BackgroundTransparency = 0.7
+            a2.BackgroundTransparency = 1
             a2.BorderColor3 = Color3.fromRGB(0, 0, 0)
             a2.BorderSizePixel = 0
             a2.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -532,7 +535,7 @@ do
         ac.Parent = B
         ac.AnchorPoint = Vector2.new(1, 0.5)
         ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ac.BackgroundTransparency = 0.7
+        ac.BackgroundTransparency = 1
         ac.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ac.BorderSizePixel = 0
         ac.Position = UDim2.new(1, 0, 0.5, 0)
@@ -560,7 +563,7 @@ do
         addToTheme("Function.Dropdown.Value Stroke", ag)
         ah.Parent = af
         ah.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ah.BackgroundTransparency = 0.7
+        ah.BackgroundTransparency = 1
         ah.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ah.BorderSizePixel = 0
         ah.Size = UDim2.new(0.8, 0, 1, 0)
@@ -579,7 +582,7 @@ do
         aj.Parent = af
         aj.AnchorPoint = Vector2.new(1, 0.5)
         aj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        aj.BackgroundTransparency = 0.7
+        aj.BackgroundTransparency = 1
         aj.BorderColor3 = Color3.fromRGB(0, 0, 0)
         aj.BorderSizePixel = 0
         aj.Position = UDim2.new(1, 0, 0.5, 0)
@@ -641,7 +644,7 @@ do
         ao.Parent = am
         ao.Active = true
         ao.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ao.BackgroundTransparency = 0.7
+        ao.BackgroundTransparency = 1
         ao.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ao.BorderSizePixel = 0
         ao.CursorPosition = -1
@@ -664,7 +667,7 @@ do
         a3.Size = UDim2.new(1, 0, 0, 2)
         ap.Parent = ak
         ap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ap.BackgroundTransparency = 0.7
+        ap.BackgroundTransparency = 1
         ap.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ap.BorderSizePixel = 0
         ap.Size = UDim2.new(1, 0, 1, 0)
@@ -680,7 +683,7 @@ do
         as.Parent = aq
         as.Active = true
         as.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        as.BackgroundTransparency = 0.7
+        as.BackgroundTransparency = 1
         as.BorderColor3 = Color3.fromRGB(0, 0, 0)
         as.BorderSizePixel = 0
         as.Size = UDim2.new(1, 0, 1, 0)
@@ -875,7 +878,7 @@ do
             aN.Size = UDim2.new(1, 0, 0, 18)
             _.Parent = aN
             _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _.BackgroundTransparency = 0.7
+            _.BackgroundTransparency = 1
             _.BorderColor3 = Color3.fromRGB(0, 0, 0)
             _.BorderSizePixel = 0
             _.Size = UDim2.new(1, 0, 1, 0)
@@ -1051,7 +1054,7 @@ function Library:Window(B)
     local aW = B.Desc or ""
     local aX = B.Icon or "door-open"
     local aY = B.Theme or "Dark"
-    local aZ = B.Config.Keybind or Enum.KeyCode.P
+    local aZ = B.Config.Keybind or Enum.KeyCode.LeftControl
     local a_ = B.Config.Size or UDim2.new(0, 530, 0, 400)
     local b0, b1 = false, false
     local b2 = B.Theme
@@ -1066,7 +1069,7 @@ function Library:Window(B)
     b4.Parent = b
     b4.AnchorPoint = Vector2.new(0.5, 0.5)
     b4.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-    b4.BackgroundTransparency = 0.7
+    b4.BackgroundTransparency = 1
     b4.Position = UDim2.new(0.5, 0, 0.5, 0)
     b4.Size = a_
     b4.Image = "rbxassetid://1316045217"
@@ -1101,7 +1104,7 @@ function Library:Window(B)
     b6.Name = "Page"
     b6.Parent = b5
     b6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    b6.BackgroundTransparency = 0.7
+    b6.BackgroundTransparency = 1
     b6.BorderColor3 = Color3.fromRGB(0, 0, 0)
     b6.BorderSizePixel = 0
     b6.Size = UDim2.new(1, 0, 1, 0)
@@ -1130,7 +1133,7 @@ function Library:Window(B)
     b8.Name = "Topbar"
     b8.Parent = b5
     b8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    b8.BackgroundTransparency = 0.7
+    b8.BackgroundTransparency = 1
     b8.BorderColor3 = Color3.fromRGB(0, 0, 0)
     b8.BorderSizePixel = 0
     b8.Size = UDim2.new(1, 0, 0, 42)
@@ -1145,7 +1148,7 @@ function Library:Window(B)
     ba.Name = "Ct"
     ba.Parent = b8
     ba.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ba.BackgroundTransparency = 0.7
+    ba.BackgroundTransparency = 1
     ba.BorderColor3 = Color3.fromRGB(0, 0, 0)
     ba.BorderSizePixel = 0
     ba.Size = UDim2.new(1, 0, 1, 0)
@@ -1158,7 +1161,7 @@ function Library:Window(B)
     bc.Parent = ba
     bc.Active = true
     bc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bc.BackgroundTransparency = 0.7
+    bc.BackgroundTransparency = 1
     bc.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bc.BorderSizePixel = 0
     bc.LayoutOrder = 2
@@ -1176,7 +1179,7 @@ function Library:Window(B)
     be.Parent = ba
     be.Active = true
     be.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    be.BackgroundTransparency = 0.7
+    be.BackgroundTransparency = 1
     be.BorderColor3 = Color3.fromRGB(0, 0, 0)
     be.BorderSizePixel = 0
     be.LayoutOrder = 3
@@ -1186,7 +1189,7 @@ function Library:Window(B)
     bn.Parent = ba
     bn.Active = true
     bn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bn.BackgroundTransparency = 0.7
+    bn.BackgroundTransparency = 1
     bn.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bn.BorderSizePixel = 0
     bn.LayoutOrder = 1
@@ -1205,7 +1208,7 @@ function Library:Window(B)
     bg.Name = "Td"
     bg.Parent = b8
     bg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bg.BackgroundTransparency = 0.7
+    bg.BackgroundTransparency = 1
     bg.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bg.BorderSizePixel = 0
     bg.Size = UDim2.new(1, 0, 1, 0)
@@ -1222,7 +1225,7 @@ function Library:Window(B)
     a2.Name = "Icon"
     a2.Parent = bg
     a2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    a2.BackgroundTransparency = 0.7
+    a2.BackgroundTransparency = 1
     a2.BorderColor3 = Color3.fromRGB(0, 0, 0)
     a2.BorderSizePixel = 0
     a2.Size = UDim2.new(0, 30, 0, 30)
@@ -1241,7 +1244,7 @@ function Library:Window(B)
     bk.Name = "Desc"
     bk.Parent = bj
     bk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bk.BackgroundTransparency = 0.7
+    bk.BackgroundTransparency = 1
     bk.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bk.BorderSizePixel = 0
     bk.LayoutOrder = 1
@@ -1263,7 +1266,7 @@ function Library:Window(B)
     bm.Name = "Title"
     bm.Parent = bj
     bm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bm.BackgroundTransparency = 0.7
+    bm.BackgroundTransparency = 1
     bm.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bm.BorderSizePixel = 0
     bm.Size = UDim2.new(1, 0, 0, 13)
@@ -1286,13 +1289,13 @@ function Library:Window(B)
     bo.Name = "TabP"
     bo.Parent = b5
     bo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bo.BackgroundTransparency = 0.7
+    bo.BackgroundTransparency = 1
     bo.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bo.BorderSizePixel = 0
     bo.Size = UDim2.new(1, 0, 1, 0)
     bp.Parent = bo
     bp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bp.BackgroundTransparency = 0.7
+    bp.BackgroundTransparency = 1
     bp.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bp.BorderSizePixel = 0
     bp.Size = UDim2.new(0, 110, 1, 0)
@@ -1300,7 +1303,7 @@ function Library:Window(B)
     bq.Parent = bp
     bq.Active = true
     bq.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    bq.BackgroundTransparency = 0.7
+    bq.BackgroundTransparency = 1
     bq.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bq.BorderSizePixel = 0
     bq.Size = UDim2.new(1, 0, 1, 0)
@@ -1322,7 +1325,7 @@ function Library:Window(B)
     br.Name = "TabList"
     br.Parent = bq
     br.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    br.BackgroundTransparency = 0.7
+    br.BackgroundTransparency = 1
     br.BorderColor3 = Color3.fromRGB(0, 0, 0)
     br.BorderSizePixel = 0
     br.Size = UDim2.new(1, 0, 1, 0)
@@ -1362,7 +1365,7 @@ function Library:Window(B)
         local bA = Instance.new("Frame")
         bz.Parent = br
         bz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bz.BackgroundTransparency = 0.7.000
+        bz.BackgroundTransparency = 1.000
         bz.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bz.BorderSizePixel = 0
         bz.Size = UDim2.new(1, 0, 0, 5)
@@ -1390,21 +1393,21 @@ function Library:Window(B)
         bB.Name = "Tab"
         bB.Parent = br
         bB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bB.BackgroundTransparency = 0.7
+        bB.BackgroundTransparency = 1
         bB.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bB.BorderSizePixel = 0
         bB.Size = UDim2.new(1, 0, 0, 30)
         bH.Name = "Func"
         bH.Parent = bB
         bH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bH.BackgroundTransparency = 0.7.000
+        bH.BackgroundTransparency = 1.000
         bH.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bH.BorderSizePixel = 0
         bH.Size = UDim2.new(1, 0, 1, 0)
         bC.Name = "Title"
         bC.Parent = bH
         bC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bC.BackgroundTransparency = 0.7
+        bC.BackgroundTransparency = 1
         bC.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bC.BorderSizePixel = 0
         bC.LayoutOrder = 1
@@ -1424,7 +1427,7 @@ function Library:Window(B)
         bD.VerticalAlignment = Enum.VerticalAlignment.Center
         bE.Parent = bH
         bE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bE.BackgroundTransparency = 0.7
+        bE.BackgroundTransparency = 1
         bE.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bE.BorderSizePixel = 0
         bE.Size = UDim2.new(0, 18, 0, 18)
@@ -1460,7 +1463,7 @@ function Library:Window(B)
         as.Parent = bI
         as.Active = true
         as.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        as.BackgroundTransparency = 0.7
+        as.BackgroundTransparency = 1
         as.BorderColor3 = Color3.fromRGB(0, 0, 0)
         as.BorderSizePixel = 0
         as.Size = UDim2.new(1, 0, 1, 0)
@@ -1582,7 +1585,7 @@ function Library:Window(B)
             local ae = Instance.new("UIPadding")
             U.Name = "Real Background"
             U.Parent = as
-            U.BackgroundTransparency = 0.7
+            U.BackgroundTransparency = 1
             U.BorderColor3 = Color3.fromRGB(0, 0, 0)
             U.BorderSizePixel = 0
             U.Size = UDim2.new(1, 0, 0, 20)
@@ -1590,14 +1593,14 @@ function Library:Window(B)
             bV.Name = "Background"
             bV.Parent = U
             bV.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            bV.BackgroundTransparency = 0.7
+            bV.BackgroundTransparency = 1
             bV.BorderColor3 = Color3.fromRGB(0, 0, 0)
             bV.BorderSizePixel = 0
             bV.Size = UDim2.new(1, 0, 0, 20)
             bW.Name = "Section"
             bW.Parent = bV
             bW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            bW.BackgroundTransparency = 0.7
+            bW.BackgroundTransparency = 1
             bW.BorderColor3 = Color3.fromRGB(0, 0, 0)
             bW.BorderSizePixel = 0
             bW.Size = UDim2.new(1, 0, 0, 20)
@@ -1636,7 +1639,7 @@ function Library:Window(B)
             b_.Parent = bY
             b_.AnchorPoint = Vector2.new(1, 0.5)
             b_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            b_.BackgroundTransparency = 0.7
+            b_.BackgroundTransparency = 1
             b_.BorderColor3 = Color3.fromRGB(0, 0, 0)
             b_.BorderSizePixel = 0
             b_.Position = UDim2.new(1, 0, 0.5, 0)
@@ -1794,7 +1797,7 @@ function Library:Window(B)
             ac.Parent = c2
             ac.AnchorPoint = Vector2.new(1, 0.5)
             ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ac.BackgroundTransparency = 0.7
+            ac.BackgroundTransparency = 1
             ac.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ac.BorderSizePixel = 0
             ac.Position = UDim2.new(1, 0, 0.5, 0)
@@ -1811,7 +1814,7 @@ function Library:Window(B)
             c3.Parent = ac
             c3.AnchorPoint = Vector2.new(1, 0.5)
             c3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            c3.BackgroundTransparency = 0.7
+            c3.BackgroundTransparency = 1
             c3.BorderColor3 = Color3.fromRGB(0, 0, 0)
             c3.BorderSizePixel = 0
             c3.Position = UDim2.new(1, 0, 0.5, 0)
@@ -1877,7 +1880,7 @@ function Library:Window(B)
             ac.Parent = c7
             ac.AnchorPoint = Vector2.new(1, 0.5)
             ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ac.BackgroundTransparency = 0.7
+            ac.BackgroundTransparency = 1
             ac.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ac.BorderSizePixel = 0
             ac.Position = UDim2.new(1, 0, 0.5, 0)
@@ -1900,7 +1903,7 @@ function Library:Window(B)
             addToTheme("Function.Slider.Value Background", c8)
             ao.Parent = c8
             ao.Active = true
-            ao.BackgroundTransparency = 0.7
+            ao.BackgroundTransparency = 1
             ao.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ao.BorderSizePixel = 0
             ao.Size = UDim2.new(1, 0, 1, 0)
@@ -1921,7 +1924,7 @@ function Library:Window(B)
             addToTheme("Function.Slider.Value Stroke", ag)
             a3.Parent = ac
             a3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            a3.BackgroundTransparency = 0.7
+            a3.BackgroundTransparency = 1
             a3.BorderColor3 = Color3.fromRGB(0, 0, 0)
             a3.BorderSizePixel = 0
             a3.Size = UDim2.new(0, 120, 0, 20)
@@ -2089,7 +2092,7 @@ function Library:Window(B)
             local cv = Instance.new("UIGradient")
             U.Name = "Real Background"
             U.Parent = as
-            U.BackgroundTransparency = 0.7
+            U.BackgroundTransparency = 1
             U.BorderColor3 = Color3.fromRGB(0, 0, 0)
             U.BorderSizePixel = 0
             U.Size = UDim2.new(1, 0, 0, 120)
@@ -2105,7 +2108,7 @@ function Library:Window(B)
             cm.Name = "FF"
             cm.Parent = cl
             cm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cm.BackgroundTransparency = 0.7
+            cm.BackgroundTransparency = 1
             cm.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cm.BorderSizePixel = 0
             cm.Size = UDim2.new(1, 0, 1, 0)
@@ -2127,7 +2130,7 @@ function Library:Window(B)
             an.Parent = b_
             a3.Parent = b_
             a3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            a3.BackgroundTransparency = 0.7
+            a3.BackgroundTransparency = 1
             a3.BorderColor3 = Color3.fromRGB(0, 0, 0)
             a3.BorderSizePixel = 0
             a3.Size = UDim2.new(1, 0, 1, 0)
@@ -2149,7 +2152,7 @@ function Library:Window(B)
             t.Parent = ap
             t.Active = true
             t.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            t.BackgroundTransparency = 0.7.000
+            t.BackgroundTransparency = 1.000
             t.BorderColor3 = Color3.fromRGB(0, 0, 0)
             t.BorderSizePixel = 0
             t.Size = UDim2.new(1, 0, 1, 0)
@@ -2162,7 +2165,7 @@ function Library:Window(B)
             cw.Name = "Code"
             cw.Parent = t
             cw.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cw.BackgroundTransparency = 0.7
+            cw.BackgroundTransparency = 1
             cw.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cw.BorderSizePixel = 0
             cw.Size = UDim2.new(1, 0, 1, 0)
@@ -2173,7 +2176,7 @@ function Library:Window(B)
             cn.Parent = cw
             cn.Active = true
             cn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cn.BackgroundTransparency = 0.7
+            cn.BackgroundTransparency = 1
             cn.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cn.BorderSizePixel = 0
             cn.Size = UDim2.new(0, 0, 0, 0)
@@ -2189,21 +2192,21 @@ function Library:Window(B)
             co.Name = "Top"
             co.Parent = b_
             co.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            co.BackgroundTransparency = 0.7
+            co.BackgroundTransparency = 1
             co.BorderColor3 = Color3.fromRGB(0, 0, 0)
             co.BorderSizePixel = 0
             co.Size = UDim2.new(1, 0, 0, 30)
             cp.Name = "Left"
             cp.Parent = co
             cp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cp.BackgroundTransparency = 0.7
+            cp.BackgroundTransparency = 1
             cp.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cp.BorderSizePixel = 0
             cp.Size = UDim2.new(1, 0, 1, 0)
             cq.Name = "Whatisthis"
             cq.Parent = cp
             cq.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cq.BackgroundTransparency = 0.7
+            cq.BackgroundTransparency = 1
             cq.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cq.BorderSizePixel = 0
             cq.Size = UDim2.new(0, 50, 0, 13)
@@ -2216,7 +2219,7 @@ function Library:Window(B)
             ad.VerticalAlignment = Enum.VerticalAlignment.Center
             aq.Parent = cp
             aq.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            aq.BackgroundTransparency = 0.7
+            aq.BackgroundTransparency = 1
             aq.BorderColor3 = Color3.fromRGB(0, 0, 0)
             aq.BorderSizePixel = 0
             aq.Size = UDim2.new(0, 100, 0, 30)
@@ -2238,7 +2241,7 @@ function Library:Window(B)
             at.PaddingRight = UDim.new(0, 8)
             _.Parent = c9
             _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _.BackgroundTransparency = 0.7
+            _.BackgroundTransparency = 1
             _.BorderColor3 = Color3.fromRGB(0, 0, 0)
             _.BorderSizePixel = 0
             _.Size = UDim2.new(1, 0, 0, 25)
@@ -2250,7 +2253,7 @@ function Library:Window(B)
             cr.Name = "Right"
             cr.Parent = co
             cr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cr.BackgroundTransparency = 0.7
+            cr.BackgroundTransparency = 1
             cr.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cr.BorderSizePixel = 0
             cr.Size = UDim2.new(1, 0, 1, 0)
@@ -2262,14 +2265,14 @@ function Library:Window(B)
             cs.VerticalAlignment = Enum.VerticalAlignment.Center
             b9.Parent = cr
             b9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            b9.BackgroundTransparency = 0.7
+            b9.BackgroundTransparency = 1
             b9.BorderColor3 = Color3.fromRGB(0, 0, 0)
             b9.BorderSizePixel = 0
             b9.Size = UDim2.new(0, 60, 0, 30)
             ct.Parent = b9
             ct.Active = true
             ct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ct.BackgroundTransparency = 0.7
+            ct.BackgroundTransparency = 1
             ct.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ct.BorderSizePixel = 0
             ct.Size = UDim2.new(1, 0, 1, 0)
@@ -2284,7 +2287,7 @@ function Library:Window(B)
             aj.Parent = b9
             aj.AnchorPoint = Vector2.new(0, 0.5)
             aj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            aj.BackgroundTransparency = 0.7
+            aj.BackgroundTransparency = 1
             aj.BorderColor3 = Color3.fromRGB(0, 0, 0)
             aj.BorderSizePixel = 0
             aj.Position = UDim2.new(0, 0, 0.5, 0)
@@ -2304,7 +2307,7 @@ function Library:Window(B)
             bA.Name = "Line"
             bA.Parent = t
             bA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            bA.BackgroundTransparency = 0.7
+            bA.BackgroundTransparency = 1
             bA.BorderColor3 = Color3.fromRGB(0, 0, 0)
             bA.BorderSizePixel = 0
             bA.Size = UDim2.new(1, 0, 1, 0)
@@ -2313,7 +2316,7 @@ function Library:Window(B)
             cy.Active = true
             cy.AutomaticSize = Enum.AutomaticSize.XY
             cy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            cy.BackgroundTransparency = 0.7
+            cy.BackgroundTransparency = 1
             cy.BorderColor3 = Color3.fromRGB(0, 0, 0)
             cy.BorderSizePixel = 0
             cy.Size = UDim2.new(0, 0, 0, 0)
@@ -2685,7 +2688,7 @@ function Library:Window(B)
             ac.Parent = aZ
             ac.AnchorPoint = Vector2.new(1, 0.5)
             ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ac.BackgroundTransparency = 0.7
+            ac.BackgroundTransparency = 1
             ac.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ac.BorderSizePixel = 0
             ac.Position = UDim2.new(1, 0, 0.5, 0)
@@ -2737,7 +2740,7 @@ function Library:Window(B)
             addToTheme("Function.Keybind.Value Stroke", ag)
             _.Parent = d4
             _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _.BackgroundTransparency = 0.7
+            _.BackgroundTransparency = 1
             _.BorderColor3 = Color3.fromRGB(0, 0, 0)
             _.BorderSizePixel = 0
             _.Size = UDim2.new(1, 0, 1, 0)
@@ -2912,7 +2915,7 @@ function Library:Window(B)
             dc.Name = "ListFunctionColorPicker"
             dc.Parent = db
             dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dc.BackgroundTransparency = 0.7
+            dc.BackgroundTransparency = 1
             dc.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dc.BorderSizePixel = 0
             dc.Size = UDim2.new(1, 0, 1, 0)
@@ -2930,7 +2933,7 @@ function Library:Window(B)
             de.Parent = dd
             de.AnchorPoint = Vector2.new(0.5, 0.5)
             de.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            de.BackgroundTransparency = 0.7
+            de.BackgroundTransparency = 1
             de.BorderColor3 = Color3.fromRGB(0, 0, 0)
             de.BorderSizePixel = 0
             de.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -3001,7 +3004,7 @@ function Library:Window(B)
             dj.Parent = dh
             dj.AnchorPoint = Vector2.new(0.5, 0.5)
             dj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dj.BackgroundTransparency = 0.7
+            dj.BackgroundTransparency = 1
             dj.Size = UDim2.new(0, 12, 0, 12)
             dj.Image = "http://www.roblox.com/asset/?id=4805639000"
             dj.ScaleType = Enum.ScaleType.Fit
@@ -3031,7 +3034,7 @@ function Library:Window(B)
             dn.Parent = dk
             dn.AnchorPoint = Vector2.new(0.5, 0.5)
             dn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dn.BackgroundTransparency = 0.7
+            dn.BackgroundTransparency = 1
             dn.Position = UDim2.new(0.5, 0, 1, 0)
             dn.Size = UDim2.new(0, 12, 0, 12)
             dn.Image = "http://www.roblox.com/asset/?id=4805639000"
@@ -3039,7 +3042,7 @@ function Library:Window(B)
             dp.Name = "TitleColorPicker"
             dp.Parent = dg
             dp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dp.BackgroundTransparency = 0.7.000
+            dp.BackgroundTransparency = 1.000
             dp.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dp.BorderSizePixel = 0
             dp.Size = UDim2.new(1, 0, 0, 27)
@@ -3080,7 +3083,7 @@ function Library:Window(B)
             dq.Parent = dg
             dq.AnchorPoint = Vector2.new(1, 0)
             dq.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dq.BackgroundTransparency = 0.7
+            dq.BackgroundTransparency = 1
             dq.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dq.BorderSizePixel = 0
             dq.Position = UDim2.new(1, 0, 0, 25)
@@ -3088,7 +3091,7 @@ function Library:Window(B)
             dr.Name = "Hax"
             dr.Parent = dq
             dr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dr.BackgroundTransparency = 0.7
+            dr.BackgroundTransparency = 1
             dr.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dr.BorderSizePixel = 0
             dr.Size = UDim2.new(1, 0, 0, 21)
@@ -3096,7 +3099,7 @@ function Library:Window(B)
             ds.Parent = dr
             ds.AnchorPoint = Vector2.new(0, 0.5)
             ds.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
-            ds.BackgroundTransparency = 0.7
+            ds.BackgroundTransparency = 1
             ds.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ds.BorderSizePixel = 0
             ds.Position = UDim2.new(0, 0, 0.5, 0)
@@ -3111,7 +3114,7 @@ function Library:Window(B)
             _.Name = "TextLabel"
             _.Parent = ds
             _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _.BackgroundTransparency = 0.7
+            _.BackgroundTransparency = 1
             _.BorderColor3 = Color3.fromRGB(0, 0, 0)
             _.BorderSizePixel = 0
             _.Size = UDim2.new(1, 0, 1, 0)
@@ -3126,7 +3129,7 @@ function Library:Window(B)
             a0.Parent = dr
             a0.AnchorPoint = Vector2.new(1, 0.5)
             a0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            a0.BackgroundTransparency = 0.7
+            a0.BackgroundTransparency = 1
             a0.BorderColor3 = Color3.fromRGB(0, 0, 0)
             a0.BorderSizePixel = 0
             a0.Position = UDim2.new(0.980000019, 0, 0.5, 0)
@@ -3144,7 +3147,7 @@ function Library:Window(B)
             dv.Name = "Red"
             dv.Parent = dq
             dv.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dv.BackgroundTransparency = 0.7
+            dv.BackgroundTransparency = 1
             dv.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dv.BorderSizePixel = 0
             dv.LayoutOrder = 1
@@ -3153,7 +3156,7 @@ function Library:Window(B)
             dw.Parent = dv
             dw.AnchorPoint = Vector2.new(0, 0.5)
             dw.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
-            dw.BackgroundTransparency = 0.7
+            dw.BackgroundTransparency = 1
             dw.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dw.BorderSizePixel = 0
             dw.Position = UDim2.new(0, 0, 0.5, 0)
@@ -3168,7 +3171,7 @@ function Library:Window(B)
             dx.Name = "TextLabel"
             dx.Parent = dw
             dx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dx.BackgroundTransparency = 0.7
+            dx.BackgroundTransparency = 1
             dx.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dx.BorderSizePixel = 0
             dx.Size = UDim2.new(1, 0, 1, 0)
@@ -3183,7 +3186,7 @@ function Library:Window(B)
             dy.Parent = dv
             dy.AnchorPoint = Vector2.new(1, 0.5)
             dy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dy.BackgroundTransparency = 0.7
+            dy.BackgroundTransparency = 1
             dy.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dy.BorderSizePixel = 0
             dy.Position = UDim2.new(0.980000019, 0, 0.5, 0)
@@ -3197,7 +3200,7 @@ function Library:Window(B)
             dz.Name = "Green"
             dz.Parent = dq
             dz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dz.BackgroundTransparency = 0.7
+            dz.BackgroundTransparency = 1
             dz.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dz.BorderSizePixel = 0
             dz.LayoutOrder = 2
@@ -3206,7 +3209,7 @@ function Library:Window(B)
             dA.Parent = dz
             dA.AnchorPoint = Vector2.new(0, 0.5)
             dA.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
-            dA.BackgroundTransparency = 0.7
+            dA.BackgroundTransparency = 1
             dA.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dA.BorderSizePixel = 0
             dA.Position = UDim2.new(0, 0, 0.5, 0)
@@ -3221,7 +3224,7 @@ function Library:Window(B)
             dB.Name = "TextLabel"
             dB.Parent = dA
             dB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dB.BackgroundTransparency = 0.7
+            dB.BackgroundTransparency = 1
             dB.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dB.BorderSizePixel = 0
             dB.Size = UDim2.new(1, 0, 1, 0)
@@ -3236,7 +3239,7 @@ function Library:Window(B)
             dC.Parent = dz
             dC.AnchorPoint = Vector2.new(1, 0.5)
             dC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dC.BackgroundTransparency = 0.7
+            dC.BackgroundTransparency = 1
             dC.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dC.BorderSizePixel = 0
             dC.Position = UDim2.new(0.980000019, 0, 0.5, 0)
@@ -3250,7 +3253,7 @@ function Library:Window(B)
             dD.Name = "Blue"
             dD.Parent = dq
             dD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dD.BackgroundTransparency = 0.7
+            dD.BackgroundTransparency = 1
             dD.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dD.BorderSizePixel = 0
             dD.LayoutOrder = 3
@@ -3259,7 +3262,7 @@ function Library:Window(B)
             dE.Parent = dD
             dE.AnchorPoint = Vector2.new(0, 0.5)
             dE.BackgroundColor3 = Color3.fromRGB(217, 217, 217)
-            dE.BackgroundTransparency = 0.7
+            dE.BackgroundTransparency = 1
             dE.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dE.BorderSizePixel = 0
             dE.Position = UDim2.new(0, 0, 0.5, 0)
@@ -3274,7 +3277,7 @@ function Library:Window(B)
             dG.Name = "TextLabel"
             dG.Parent = dE
             dG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dG.BackgroundTransparency = 0.7
+            dG.BackgroundTransparency = 1
             dG.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dG.BorderSizePixel = 0
             dG.Size = UDim2.new(1, 0, 1, 0)
@@ -3289,7 +3292,7 @@ function Library:Window(B)
             dH.Parent = dD
             dH.AnchorPoint = Vector2.new(1, 0.5)
             dH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dH.BackgroundTransparency = 0.7
+            dH.BackgroundTransparency = 1
             dH.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dH.BorderSizePixel = 0
             dH.Position = UDim2.new(0.980000019, 0, 0.5, 0)
@@ -3318,7 +3321,7 @@ function Library:Window(B)
             dK.Parent = dI
             dK.AnchorPoint = Vector2.new(0.5, 0.5)
             dK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            dK.BackgroundTransparency = 0.7.000
+            dK.BackgroundTransparency = 1.000
             dK.BorderColor3 = Color3.fromRGB(0, 0, 0)
             dK.BorderSizePixel = 0
             dK.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -3683,7 +3686,7 @@ function Library:Window(B)
             ac.Parent = ea
             ac.AnchorPoint = Vector2.new(1, 0.5)
             ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ac.BackgroundTransparency = 0.7
+            ac.BackgroundTransparency = 1
             ac.BorderColor3 = Color3.fromRGB(0, 0, 0)
             ac.BorderSizePixel = 0
             ac.Position = UDim2.new(1, 0, 0.5, 0)
@@ -3715,7 +3718,7 @@ function Library:Window(B)
             aj.Parent = a3
             aj.AnchorPoint = Vector2.new(1, 0.5)
             aj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            aj.BackgroundTransparency = 0.7
+            aj.BackgroundTransparency = 1
             aj.BorderColor3 = Color3.fromRGB(0, 0, 0)
             aj.BorderSizePixel = 0
             aj.Position = UDim2.new(1, 0, 0.5, 0)
@@ -3726,7 +3729,7 @@ function Library:Window(B)
             _.Name = "TextLabel"
             _.Parent = a3
             _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _.BackgroundTransparency = 0.7
+            _.BackgroundTransparency = 1
             _.BorderColor3 = Color3.fromRGB(0, 0, 0)
             _.BorderSizePixel = 0
             _.Size = UDim2.new(0.800000012, 0, 1, 0)
@@ -3787,7 +3790,7 @@ function Library:Window(B)
     eb.Parent = b
     eb.AnchorPoint = Vector2.new(1, 1)
     eb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    eb.BackgroundTransparency = 0.7
+    eb.BackgroundTransparency = 1
     eb.BorderColor3 = Color3.fromRGB(0, 0, 0)
     eb.BorderSizePixel = 0
     eb.Position = UDim2.new(1, 0, 1, 0)
@@ -3817,7 +3820,7 @@ function Library:Window(B)
         ef.Name = "Shadow"
         ef.Parent = eb
         ef.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-        ef.BackgroundTransparency = 0.7
+        ef.BackgroundTransparency = 1
         ef.Size = UDim2.new(0, 180, 0, 0)
         ef.Image = "rbxassetid://1316045217"
         ef.ImageColor3 = a[b3].Shadow
@@ -3854,7 +3857,7 @@ function Library:Window(B)
         eg.Name = "Text"
         eg.Parent = b5
         eg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        eg.BackgroundTransparency = 0.7
+        eg.BackgroundTransparency = 1
         eg.BorderColor3 = Color3.fromRGB(0, 0, 0)
         eg.BorderSizePixel = 0
         eg.Size = UDim2.new(1, 0, 1, 0)
@@ -3867,7 +3870,7 @@ function Library:Window(B)
         bj.Parent = eg
         bj.AutomaticSize = Enum.AutomaticSize.Y
         bj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        bj.BackgroundTransparency = 0.7
+        bj.BackgroundTransparency = 1
         bj.BorderColor3 = Color3.fromRGB(0, 0, 0)
         bj.BorderSizePixel = 0
         bj.Size = UDim2.new(1, 0, 0, 0)
@@ -3887,7 +3890,7 @@ function Library:Window(B)
         eh.Parent = eg
         eh.AutomaticSize = Enum.AutomaticSize.Y
         eh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        eh.BackgroundTransparency = 0.7
+        eh.BackgroundTransparency = 1
         eh.BorderColor3 = Color3.fromRGB(0, 0, 0)
         eh.BorderSizePixel = 0
         eh.LayoutOrder = 2
@@ -4038,14 +4041,14 @@ function Library:Window(B)
         a3.Parent = eo
         a3.AnchorPoint = Vector2.new(0.5, 0.5)
         a3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        a3.BackgroundTransparency = 0.7
+        a3.BackgroundTransparency = 1
         a3.BorderColor3 = Color3.fromRGB(0, 0, 0)
         a3.BorderSizePixel = 0
         a3.Position = UDim2.new(0.5, 0, 0.5, 0)
         a3.Size = UDim2.new(0, 100, 0, 100)
         _.Parent = a3
         _.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        _.BackgroundTransparency = 0.7
+        _.BackgroundTransparency = 1
         _.BorderColor3 = Color3.fromRGB(0, 0, 0)
         _.BorderSizePixel = 0
         _.Size = UDim2.new(0, 200, 0, 30)
@@ -4060,7 +4063,7 @@ function Library:Window(B)
         ad.VerticalAlignment = Enum.VerticalAlignment.Center
         ap.Parent = a3
         ap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ap.BackgroundTransparency = 0.7
+        ap.BackgroundTransparency = 1
         ap.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ap.BorderSizePixel = 0
         ap.LayoutOrder = 1
@@ -4091,7 +4094,7 @@ function Library:Window(B)
         eq.Rotation = 180
         a0.Parent = ep
         a0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        a0.BackgroundTransparency = 0.7
+        a0.BackgroundTransparency = 1
         a0.BorderColor3 = Color3.fromRGB(0, 0, 0)
         a0.BorderSizePixel = 0
         a0.Size = UDim2.new(1, 0, 1, 0)
@@ -4134,7 +4137,7 @@ function Library:Window(B)
         et.Rotation = 180
         dx.Parent = er
         dx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        dx.BackgroundTransparency = 0.7
+        dx.BackgroundTransparency = 1
         dx.BorderColor3 = Color3.fromRGB(0, 0, 0)
         dx.BorderSizePixel = 0
         dx.Size = UDim2.new(1, 0, 1, 0)
@@ -4188,7 +4191,7 @@ function Library:Window(B)
         ew.Active = true
         ew.AnchorPoint = Vector2.new(1, 1)
         ew.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ew.BackgroundTransparency = 0.7
+        ew.BackgroundTransparency = 1
         ew.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ew.BorderSizePixel = 0
         ew.Position = UDim2.new(1, 0, 1, 0)
@@ -4202,14 +4205,14 @@ function Library:Window(B)
         ex.Name = "SizeFrame"
         ex.Parent = b5
         ex.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-        ex.BackgroundTransparency = 0.7
+        ex.BackgroundTransparency = 1
         ex.BorderColor3 = Color3.fromRGB(0, 0, 0)
         ex.BorderSizePixel = 0
         ex.Size = UDim2.new(1, 0, 1, 0)
         aj.Parent = ex
         aj.AnchorPoint = Vector2.new(0.5, 0.5)
         aj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        aj.BackgroundTransparency = 0.7
+        aj.BackgroundTransparency = 1
         aj.BorderColor3 = Color3.fromRGB(0, 0, 0)
         aj.BorderSizePixel = 0
         aj.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -4260,7 +4263,7 @@ function Library:Window(B)
             function(p)
                 if p.UserInputType == Enum.UserInputType.MouseButton1 or p.UserInputType == Enum.UserInputType.Touch then
                     b0 = false
-                    tw({v = ex, t = 0.15, s = Enum.EasingStyle.Linear, d = "Out", g = {BackgroundTransparency = 0.7}}):Play(
+                    tw({v = ex, t = 0.15, s = Enum.EasingStyle.Linear, d = "Out", g = {BackgroundTransparency = 1}}):Play(
 
                     )
                     tw({v = aj, t = 0.15, s = Enum.EasingStyle.Linear, d = "Out", g = {ImageTransparency = 1}}):Play()
@@ -4453,7 +4456,7 @@ function Library:Window(B)
             eO.Name = "CloseUIShadow"
             eO.Parent = b
             eO.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-            eO.BackgroundTransparency = 0.7
+            eO.BackgroundTransparency = 1
             eO.Position = UDim2.new(0, 0, 0.200000003, 0)
             eO.Size = UDim2.new(0, 70, 0, 40)
             eO.Image = "rbxassetid://1316045217"
@@ -4495,7 +4498,7 @@ function Library:Window(B)
             bj.Parent = eQ
             bj.AutomaticSize = Enum.AutomaticSize.Y
             bj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            bj.BackgroundTransparency = 0.7
+            bj.BackgroundTransparency = 1
             bj.BorderColor3 = Color3.fromRGB(0, 0, 0)
             bj.BorderSizePixel = 0
             bj.Size = UDim2.new(1, 0, 1, 0)
