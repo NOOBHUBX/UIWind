@@ -12,8 +12,8 @@ local a = {
             ["Toggle"] = {
                 ["Background"] = Color3.fromRGB(25, 115, 177),
                 ["True"] = {
-                    ["Toggle Background"] = Color3.fromRGB(25, 115, 177),
-                    ["Toggle Value"] = Color3.fromRGB(0, 191, 255)
+                    ["Toggle Background"] = Color3.fromRGB(15, 76, 117),
+                    ["Toggle Value"] = Color3.fromRGB(17, 45, 78)
                 },
                 ["False"] = {
                     ["Toggle Background"] = Color3.fromRGB(20, 30, 48),
@@ -1065,7 +1065,7 @@ function Library:Window(B)
     b4.Parent = b
     b4.AnchorPoint = Vector2.new(0.5, 0.5)
     b4.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-    b4.BackgroundTransparency = 0.7
+    b4.BackgroundTransparency = 1
     b4.Position = UDim2.new(0.5, 0, 0.5, 0)
     b4.Size = a_
     b4.Image = "rbxassetid://1316045217"
