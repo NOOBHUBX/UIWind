@@ -3,41 +3,41 @@ SaveTheme = {}
 local a = {
     index = {"Dark", "Ocean"},
     Ocean = {
-        ["Shadow"] = Color3.fromRGB(24, 24, 31),
-        ["Background"] = Color3.fromRGB(29, 28, 38),
-        ["Page"] = Color3.fromRGB(24, 24, 31),
-        ["Main"] = Color3.new(0.152941, 0.690196, 1.000000),
+        ["Shadow"] =Color3.fromRGB(20, 30, 48),
+        ["Background"] = Color3.fromRGB(15, 76, 117),
+        ["Page"] =Color3.fromRGB(17, 45, 78),
+        ["Main"] = Color3.fromRGB(0, 191, 255),
         ["Text & Icon"] = Color3.fromRGB(255, 255, 255),
         ["Function"] = {
             ["Toggle"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
+                ["Background"] = Color3.fromRGB(25, 115, 177),
                 ["True"] = {
-                    ["Toggle Background"] = Color3.fromRGB(44, 34, 103),
-                    ["Toggle Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000)
+                    ["Toggle Background"] = Color3.fromRGB(25, 115, 177),
+                    ["Toggle Value"] = Color3.fromRGB(0, 191, 255)
                 },
                 ["False"] = {
-                    ["Toggle Background"] = Color3.fromRGB(36, 35, 48),
-                    ["Toggle Value"] = Color3.fromRGB(44, 42, 62)
+                    ["Toggle Background"] = Color3.fromRGB(20, 30, 48),
+                    ["Toggle Value"] = Color3.fromRGB(60, 90, 120)
                 }
             },
-            ["Label"] = {["Background"] = Color3.fromRGB(29, 28, 38)},
+            ["Label"] = {["Background"] = Color3.fromRGB(15, 76, 117)},
             ["Dropdown"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
-                ["Value Background"] = Color3.fromRGB(24, 24, 31),
+                ["Background"] = Color3.fromRGB(15, 76, 117),
+                ["Value Background"] = Color3.fromRGB(17, 45, 78),
                 ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
                 ["Dropdown Select"] = {
-                    ["Background"] = Color3.fromRGB(24, 24, 31),
-                    ["Search"] = Color3.fromRGB(35, 35, 42),
-                    ["Item Background"] = Color3.fromRGB(45, 45, 52)
+                    ["Background"] =  Color3.fromRGB(17, 45, 78),
+                    ["Search"] = Color3.fromRGB(25, 50, 80),
+                    ["Item Background"] = Color3.fromRGB(35, 70, 100)
                 }
             },
             ["Slider"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
-                ["Value Background"] = Color3.fromRGB(24, 24, 31),
+                ["Background"] = Color3.fromRGB(15, 76, 117),
+                ["Value Background"] = Color3.fromRGB(17, 45, 78),
                 ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
-                ["Slider Bar"] = Color3.fromRGB(44, 34, 103),
-                ["Slider Bar Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000),
-                ["Circle Value"] = Color3.fromRGB(255, 255, 255)
+                ["Slider Bar"] = Color3.fromRGB(25, 115, 177),
+                ["Slider Bar Value"] = Color3.fromRGB(0, 191, 255),
+                ["Circle Value"] = Color3.fromRGB(255, 255, 255)    
             },
             ["Code"] = {
                 ["Background"] = ColorSequence.new {
@@ -48,29 +48,29 @@ local a = {
                 ["Background Code Value"] = Color3.fromRGB(38, 50, 56),
                 ["ScrollingFrame Code"] = Color3.fromRGB(216, 150, 179)
             },
-            ["Button"] = {["Background"] = Color3.fromRGB(29, 28, 38), ["Click"] = Color3.fromRGB(255, 255, 255)},
+            ["Button"] = {["Background"] = Color3.fromRGB(0, 191, 255), ["Click"] = Color3.fromRGB(255, 255, 255)},
             ["Textbox"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
-                ["Value Background"] = Color3.fromRGB(24, 24, 31),
-                ["Value Stroke"] = Color3.fromRGB(255, 255, 255)
+                ["Background"] = Color3.fromRGB(25, 50, 80),
+                ["Value Background"] = Color3.fromRGB(20, 40, 60),
+                ["Value Stroke"] = Color3.fromRGB(180, 220, 255)
             },
             ["Keybind"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
-                ["Value Background"] = Color3.fromRGB(24, 24, 31),
+                ["Background"] = Color3.fromRGB(15, 76, 117),
+                ["Value Background"] = Color3.fromRGB(17, 45, 78),
                 ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
                 ["True"] = {
-                    ["Toggle Background"] = Color3.fromRGB(44, 34, 103),
-                    ["Toggle Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000)
+                    ["Toggle Background"] = Color3.fromRGB(25, 115, 177),
+                    ["Toggle Value"] = Color3.fromRGB(0, 191, 255)
                 },
                 ["False"] = {
-                    ["Toggle Background"] = Color3.fromRGB(36, 35, 48),
-                    ["Toggle Value"] = Color3.fromRGB(44, 42, 62)
+                    ["Toggle Background"] = Color3.fromRGB(20, 30, 48),
+                    ["Toggle Value"] = Color3.fromRGB(60, 90, 120)
                 }
             },
             ["Color Picker"] = {
-                ["Background"] = Color3.fromRGB(29, 28, 38),
+                ["Background"] = Color3.fromRGB(15, 76, 117),
                 ["Color Select"] = {
-                    ["Background"] = Color3.fromRGB(24, 24, 31),
+                    ["Background"] = Color3.fromRGB(17, 45, 78),
                     ["UIStroke"] = Color3.fromRGB(255, 255, 255)
                 }
             }
@@ -1050,7 +1050,7 @@ function Library:Window(B)
     local aW = B.Desc or ""
     local aX = B.Icon or "door-open"
     local aY = B.Theme or "Dark"
-    local aZ = B.Config.Keybind or Enum.KeyCode.LeftControl
+    local aZ = B.Config.Keybind or Enum.KeyCode.P
     local a_ = B.Config.Size or UDim2.new(0, 530, 0, 400)
     local b0, b1 = false, false
     local b2 = B.Theme
@@ -1065,7 +1065,7 @@ function Library:Window(B)
     b4.Parent = b
     b4.AnchorPoint = Vector2.new(0.5, 0.5)
     b4.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
-    b4.BackgroundTransparency = 1
+    b4.BackgroundTransparency = 0.7
     b4.Position = UDim2.new(0.5, 0, 0.5, 0)
     b4.Size = a_
     b4.Image = "rbxassetid://1316045217"
