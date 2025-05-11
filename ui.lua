@@ -2,18 +2,18 @@ Library = {}
 SaveTheme = {}
 local a = {
     index = {"Dark", "Ocean"},
-    Ocean = {
+    Amethyst = {
         ["Shadow"] = Color3.fromRGB(24, 24, 31),
         ["Background"] = Color3.fromRGB(29, 28, 38),
         ["Page"] = Color3.fromRGB(24, 24, 31),
-        ["Main"] = Color3.new(0.380392, 0.772549, 1.000000),
+        ["Main"] = Color3.new(0.152941, 0.690196, 1.000000),
         ["Text & Icon"] = Color3.fromRGB(255, 255, 255),
         ["Function"] = {
             ["Toggle"] = {
                 ["Background"] = Color3.fromRGB(29, 28, 38),
                 ["True"] = {
                     ["Toggle Background"] = Color3.fromRGB(44, 34, 103),
-                    ["Toggle Value"] = Color3.fromRGB(0.380392, 0.772549, 1.000000)
+                    ["Toggle Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000)
                 },
                 ["False"] = {
                     ["Toggle Background"] = Color3.fromRGB(36, 35, 48),
@@ -36,7 +36,7 @@ local a = {
                 ["Value Background"] = Color3.fromRGB(24, 24, 31),
                 ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
                 ["Slider Bar"] = Color3.fromRGB(44, 34, 103),
-                ["Slider Bar Value"] = Color3.fromRGB(0.380392, 0.772549, 1.000000),
+                ["Slider Bar Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000),
                 ["Circle Value"] = Color3.fromRGB(255, 255, 255)
             },
             ["Code"] = {
@@ -60,7 +60,7 @@ local a = {
                 ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
                 ["True"] = {
                     ["Toggle Background"] = Color3.fromRGB(44, 34, 103),
-                    ["Toggle Value"] = Color3.fromRGB(0.380392, 0.772549, 1.000000)
+                    ["Toggle Value"] = Color3.fromRGB(0.152941, 0.690196, 1.000000)
                 },
                 ["False"] = {
                     ["Toggle Background"] = Color3.fromRGB(36, 35, 48),
@@ -76,10 +76,6 @@ local a = {
             }
         }
     },
-
-    
-
-
     Dark = {
         ["Shadow"] = Color3.fromRGB(15, 15, 15),
         ["Background"] = Color3.fromRGB(20, 20, 20),
