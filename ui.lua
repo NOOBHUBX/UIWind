@@ -12,8 +12,8 @@ local a = {
             ["Toggle"] = {
                 ["Background"] = Color3.fromRGB(25, 115, 177),
                 ["True"] = {
-                    ["Toggle Background"] = Color3.fromRGB(15, 76, 117),
-                    ["Toggle Value"] = Color3.fromRGB(17, 45, 78)
+                    ["Toggle Background"] = Color3.fromRGB(25, 115, 177),
+                    ["Toggle Value"] = Color3.fromRGB(0, 191, 255)
                 },
                 ["False"] = {
                     ["Toggle Background"] = Color3.fromRGB(20, 30, 48),
@@ -48,7 +48,7 @@ local a = {
                 ["Background Code Value"] = Color3.fromRGB(38, 50, 56),
                 ["ScrollingFrame Code"] = Color3.fromRGB(216, 150, 179)
             },
-            ["Button"] = {["Background"] = Color3.fromRGB(0, 191, 255), ["Click"] = Color3.fromRGB(255, 255, 255)},
+            ["Button"] = {["Background"] = Color3.fromRGB(17, 45, 78), ["Click"] = Color3.fromRGB(255, 255, 255)},
             ["Textbox"] = {
                 ["Background"] = Color3.fromRGB(25, 50, 80),
                 ["Value Background"] = Color3.fromRGB(20, 40, 60),
