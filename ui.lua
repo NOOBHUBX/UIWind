@@ -158,6 +158,7 @@ local a = {
 
     Dark = {
         ["Shadow"] = Color3.fromRGB(15, 15, 15),
+        ["BackgroundTransparency"] = 0.8,
         ["Background"] = Color3.fromRGB(20, 20, 20),
         ["Page"] = Color3.fromRGB(18, 18, 18),
         ["Main"] = Color3.fromRGB(50, 50, 50),
@@ -1130,7 +1131,7 @@ function Library:Window(B)
     local aW = B.Desc or ""
     local aX = B.Icon or "door-open"
     local aY = B.Theme or "Dark"
-    local aZ = B.Config.Keybind or Enum.KeyCode.LeftControl
+    local aZ = B.Config.Keybind or Enum.KeyCode.P
     local a_ = B.Config.Size or UDim2.new(0, 530, 0, 400)
     local b0, b1 = false, false
     local b2 = B.Theme
