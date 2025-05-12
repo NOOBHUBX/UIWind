@@ -1,7 +1,81 @@
 Library = {}
 SaveTheme = {}
 local a = {
-    index = {"Dark", "Ocean"},
+    index = {"Dark", "Ocean","NH"},
+    NH = {
+        ["Shadow"] =Color3.new(0.188235, 0.078431, 0.078431),
+        ["Background"] = Color3.new(0.458824, 0.058824, 0.058824),
+        ["Page"] =Color3.new(0.305882, 0.066667, 0.066667),
+        ["Main"] = Color3.new(1.000000, 0.000000, 0.000000),
+        ["Text & Icon"] = Color3.fromRGB(255, 255, 255),
+        ["Function"] = {
+            ["Toggle"] = {
+                ["Background"] = Color3.new(0.694118, 0.098039, 0.098039),
+                ["True"] = {
+                    ["Toggle Background"] = Color3.new(0.694118, 0.098039, 0.098039),
+                    ["Toggle Value"] = Color3.new(1.000000, 0.000000, 0.000000)
+                },
+                ["False"] = {
+                    ["Toggle Background"] = Color3.new(0.188235, 0.078431, 0.078431),
+                    ["Toggle Value"] = Color3.new(0.470588, 0.235294, 0.235294)
+                }
+            },
+            ["Label"] = {["Background"] = Color3.new(0.458824, 0.058824, 0.058824)},
+            ["Dropdown"] = {
+                ["Background"] = Color3.new(0.458824, 0.058824, 0.058824),
+                ["Value Background"] = Color3.new(0.305882, 0.066667, 0.066667),
+                ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
+                ["Dropdown Select"] = {
+                    ["Background"] =  Color3.new(0.305882, 0.066667, 0.066667),
+                    ["Search"] = Color3.new(0.313725, 0.098039, 0.098039),
+                    ["Item Background"] = Color3.new(0.392157, 0.137255, 0.137255)
+                }
+            },
+            ["Slider"] = {
+                ["Background"] = Color3.new(0.458824, 0.058824, 0.058824),
+                ["Value Background"] = Color3.new(0.305882, 0.066667, 0.066667),
+                ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
+                ["Slider Bar"] = Color3.new(0.694118, 0.098039, 0.098039),
+                ["Slider Bar Value"] = Color3.new(1.000000, 0.000000, 0.000000),
+                ["Circle Value"] = Color3.fromRGB(255, 255, 255)    
+            },
+            ["Code"] = {
+                ["Background"] = ColorSequence.new {
+                    ColorSequenceKeypoint.new(0, Color3.new(0.149020, 0.109804, 0.109804)),
+                    ColorSequenceKeypoint.new(1, Color3.new(0.149020, 0.109804, 0.109804))
+                },
+                ["Background Code"] = Color3.new(0.266667, 0.200000, 0.200000),
+                ["Background Code Value"] = Color3.new(0.219608, 0.149020, 0.149020),
+                ["ScrollingFrame Code"] = Color3.new(0.847059, 0.588235, 0.588235)
+            },
+            ["Button"] = {["Background"] = Color3.new(0.458824, 0.058824, 0.058824), ["Click"] = Color3.fromRGB(255, 255, 255)},
+            ["Textbox"] = {
+                ["Background"] = Color3.new(0.313725, 0.098039, 0.098039),
+                ["Value Background"] = Color3.new(0.235294, 0.078431, 0.078431),
+                ["Value Stroke"] = Color3.new(1.000000, 0.705882, 0.705882)
+            },
+            ["Keybind"] = {
+                ["Background"] = Color3.new(0.458824, 0.058824, 0.058824),
+                ["Value Background"] = Color3.new(0.305882, 0.066667, 0.066667),
+                ["Value Stroke"] = Color3.fromRGB(255, 255, 255),
+                ["True"] = {
+                    ["Toggle Background"] = Color3.new(0.694118, 0.098039, 0.098039),
+                    ["Toggle Value"] = Color3.new(1.000000, 0.000000, 0.000000)
+                },
+                ["False"] = {
+                    ["Toggle Background"] = Color3.new(0.188235, 0.078431, 0.078431),
+                    ["Toggle Value"] = Color3.new(0.470588, 0.235294, 0.235294)
+                }
+            },
+            ["Color Picker"] = {
+                ["Background"] = Color3.new(0.458824, 0.058824, 0.058824),
+                ["Color Select"] = {
+                    ["Background"] = Color3.new(0.305882, 0.066667, 0.066667),
+                    ["UIStroke"] = Color3.fromRGB(255, 255, 255)
+                }
+            }
+        }
+    },
     Ocean = {
         ["Shadow"] =Color3.fromRGB(20, 30, 48),
         ["Background"] = Color3.fromRGB(15, 76, 117),
